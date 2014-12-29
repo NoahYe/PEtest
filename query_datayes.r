@@ -2,7 +2,10 @@ require(RCurl)
 source('API_datayes.r')
 
 #set the requset access token
-httpheader <- c("Authorization"="Bearer 8aef3c023b90a3d71f24c8544ada4a20c59b5cbc44cc84636755d94f4c8d4e28");
+#httpheader <- c("Authorization"="Bearer 8aef3c023b90a3d71f24c8544ada4a20c59b5cbc44cc84636755d94f4c8d4e28");
+#interactive imput for access token
+#cat('Please update the datayes access token\n')
+#httpheader <- c("Authorization"=paste("Bearer ",readline(),sep=''))
 #set the base url
 base_url <- "https://gw.wmcloud.com:443/data/"
 #verify the parameter: stockID,startDate,endDate,field

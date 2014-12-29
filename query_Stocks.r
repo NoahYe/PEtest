@@ -8,8 +8,11 @@ startDate <- '20140101'
 endDate <- '20141221'
 field <- ''
 callback <- ''
+#interactive input for access token
+cat('Please update the datayes access token\n')
+httpheader <- c("Authorization"=paste("Bearer ",readline(),sep=''))
 
-stock_list <- stock_list[259:300]
+stock_list <- stock_list[259:270]
 cat('Start download...\n')
 for(name in stock_list){
 	stockID <- name 
