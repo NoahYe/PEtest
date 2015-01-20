@@ -8,7 +8,7 @@ stock_list <- read.csv(stock_list_file,header=T,stringsAsFactors=F,colClasses='c
 total_naNum <- 0
 naStatus <- NA
 name <- NA
-# stock_list <- stock_list[1:10]
+stock_list <- stock_list[1:100]
 
 for(name in stock_list){
 	stockID <- name 
