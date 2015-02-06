@@ -1,0 +1,1 @@
+#the function input requires: InnerCode, TradingDateList
